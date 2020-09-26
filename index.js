@@ -227,9 +227,8 @@ console.log (artists[8].name)
 */
 
 function getArtistByIndex(array, index) {
-    getArtistByIndex = 
-  }
-  
+  getArtistByIndex =  
+
 getArtistByIndex(artists, 2);
 
   
@@ -253,12 +252,15 @@ function get20s(/* Code here */){
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will 
+ * continuously remove artists from the array until there are none left. If you refresh your browser, 
+ * the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
+function removeArtist(arr, index) {
+  let deleteArtist = arr.pop([index])
+  return deleteArtist;
+}
+removeArtist(artists, 0);
  
 
 /**
@@ -291,8 +293,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
+function lotsOfArt(arr){
+  let filteredArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].filter(artists)) {
+      filteredArray.push(arr[i]);
+    }
+  }
+  return filteredArray;
+}
+lotsOfArt(artists);
   /* Code here */
 
+
+for (var in object) {
+  code block to be executed
 }
