@@ -209,7 +209,7 @@ const artists = [
 (2) Bio of the third artist (2nd index) in the array */
 
 console.log (artists[0].name)
-console.log (artists[2])
+console.log (artists[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
 Use an array method to fix this issue and console.log() to check your work. */
@@ -227,10 +227,12 @@ console.log (artists[8].name)
 */
 
 function getArtistByIndex(array, index) {
-  getArtistByIndex =  
+  retrieveArtist = console.log(`The artist at index ${artists[index].id} is ${artists[index].name}`);
+  return retrieveArtist;
+
+}  
 
 getArtistByIndex(artists, 2);
-
   
   /**
 
@@ -263,6 +265,13 @@ function removeArtist(arr, index) {
 removeArtist(artists, 0);
  
 
+
+function removeArtist(arr, index) {
+  let deleteArtist = arr.pop(arr[index]);
+  return deleteArtist;
+}
+removeArtist(artists, 0);
+ 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
