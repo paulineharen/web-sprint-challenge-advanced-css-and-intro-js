@@ -258,20 +258,22 @@ function get20s(/* Code here */){
  * continuously remove artists from the array until there are none left. If you refresh your browser, 
  * the data will reset.  
 */
-function removeArtist(arr, index) {
-  let deleteArtist = arr.pop([index])
-  return deleteArtist;
-}
-removeArtist(artists, 0);
- 
 
+var deleteA = artists.splice
 
 function removeArtist(arr, index) {
-  let deleteArtist = arr.pop(arr[index]);
-  return deleteArtist;
+ deleteA = artists.splice(index,1);
+ return console.log(artists.length)
 }
-removeArtist(artists, 0);
- 
+
+removeArtist(artists, 5);
+removeArtist(artists, 7);
+
+
+
+
+
+
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
@@ -313,8 +315,3 @@ function lotsOfArt(arr){
 }
 lotsOfArt(artists);
   /* Code here */
-
-
-for (var in object) {
-  code block to be executed
-}
