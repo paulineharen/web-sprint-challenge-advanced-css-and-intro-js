@@ -270,10 +270,6 @@ removeArtist(artists, 5);
 removeArtist(artists, 7);
 
 
-
-
-
-
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
@@ -307,11 +303,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(arr){
   let filteredArray = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].filter(artists)) {
+    if (arr[i].paintings > 100) {
       filteredArray.push(arr[i]);
     }
   }
   return filteredArray;
 }
 lotsOfArt(artists);
-  /* Code here */
